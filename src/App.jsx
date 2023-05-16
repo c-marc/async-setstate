@@ -53,6 +53,15 @@ function Test() {
       "and ref disabled=",
       myRef.current.disabled
     );
+    // Second update
+    setDisabled(false);
+    console.log("handler asked for state disabled false");
+    console.log(
+      "handler says state disabled=",
+      disabled,
+      "and ref disabled=",
+      myRef.current.disabled
+    );
   };
 
   return (
